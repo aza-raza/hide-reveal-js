@@ -1,0 +1,40 @@
+header{
+    height: 100vh;
+    background: url(../img/cat.jpg) center / cover;
+    position: relative;
+    nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: brown;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        transition:.3s all ease-in-out;
+
+        a{
+            text-decoration: none;
+            text-transform: uppercase;
+            padding: 25px 0;
+            text-align: center;
+            color: white;
+            cursor: pointer;
+        }
+        &.hide {
+            transform:translateY(-100%); 
+            /* display: none; */
+        }
+    }
+    
+}
+.content{
+    width: 80%;
+    text-align: center;
+    margin: 30px auto;
+    line-height: 1.5em;
+}
+h1{
+    font-family: 'Roboto';
+}
+
